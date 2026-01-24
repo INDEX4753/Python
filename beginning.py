@@ -1,0 +1,1 @@
+print("Each story has a romantic beginning, so does Python.")
