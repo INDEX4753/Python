@@ -69,3 +69,10 @@ print(keys)  # 输出: dict_keys(['x', 'y', 'z'])
 # 获取值集合
 values = dic2.values()
 print(values)  # 输出: dict_values([10, 20, 30])
+
+# 获取键值对集合
+items = dic2.items()
+print(items)  # 输出: dict_items([('x', 10), ('y', 20), ('z', 30)])
+# 遍历字典
+for key, value in dic2.items():
+    print(f"{key}: {value}")
