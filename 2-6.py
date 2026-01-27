@@ -1,5 +1,5 @@
 '''
-2-6 Dictionary(字典)
+2-6 Dictionary
 '''
 # 无序的映射集合 键值对 类似于C++里面的set
 

@@ -1,5 +1,5 @@
 '''
-2-2 string
+2-2 String
 '''
 
 str1 = "Hello, World!"
