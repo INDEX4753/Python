@@ -40,7 +40,7 @@ if __name__ == '__main__':
     print(teacher)
 
     ta = TeachingAssistant()
-    ta.SetName("王助教")
+    ta.SetName("王珺")
     ta.SetStudentID("S54321")
     ta.SetTeacherID("T09876")
     ta.SetCourse("计算机科学导论")
