@@ -6,7 +6,7 @@
 
 ### Chapter 3 函数
 
-### Chapter 4 列表，集合和字典
+### Chapter 4 列表，集合，字典和字符串
 
 ### Chapter 5 面向对象基础
 
