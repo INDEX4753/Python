@@ -6,9 +6,11 @@
 
 ### Chapter 3 函数
 
-### Chapter 4 列表，集合，字典和字符串
+### Chapter 4 列表，集合，字典
 
 ### Chapter 5 面向对象基础
+
+### Chapter 6 字符串和正则表达式
 
 #### 只是一个学习Python的笔记
 
