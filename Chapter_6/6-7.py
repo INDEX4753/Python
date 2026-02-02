@@ -65,3 +65,57 @@
 # 例如，re.match(r"\d+", "123abc") 匹配了字符串 "123abc" 中的 "123"。
 # 如果匹配成功，match 方法返回一个匹配对象；如果匹配失败，返回 None。
 # 你可以使用匹配对象的方法来获取匹配的结果，例如 group() 方法用于获取匹配的字符串。
+
+import re
+str1 = 'Python is a great language.'
+result1 = re.match(r'Python', str1, re.I)
+print(result1)
+print(result1.group())
+result2 = re.match(r'python', str1, re.I)
+print(result2)
+print(result2.group())
+str2 = """I like Python.
+Python is a great language.
+"""
+result3 = re.match(r'Python', str2, re.I|re.M)
+print(result3)
+print(result3.group())
+# 即使在多行模式下，match 方法也只能从字符串的开头开始匹配。
+# 如果要在多行字符串中匹配多个模式，需要使用 findall 方法或 search 方法。
+
+# 除了直接调用re模块的match方法，还可以使用compile方法编译正则表达式模式，
+# 然后调用编译后的正则表达式对象的match方法进行匹配。
+# 例如，result3 = re.compile(r'Python', re.I|re.M).match(str2) 也可以实现与 result3 相同的匹配结果。
+pattern = re.compile(r'Python', re.I|re.M)
+result4 = pattern.match(str2)
+print(result4)
+print(result4.group())
+result5 = pattern.match(str2, pos=10)
+print(result5)
+print(result5.group())
+
+# 使用compile方法编译正则表达式模式后，
+# 可以多次调用match方法进行匹配，而不需要每次都编译正则表达式模式。
+# 这在需要多次匹配相同模式的情况下可以提高效率。
+
+## search方法
+# search 方法用于在字符串中搜索正则表达式模式的第一个匹配项。
+# 它的语法如下：
+# re.search(pattern, string, flags=0)
+# 其中，pattern 是要搜索的正则表达式模式，string 是要搜索的字符串，flags 是可选的标志参数，用于指定搜索的行为。
+# 例如，re.search(r"\d+", "abc123def") 搜索了字符串 "abc123def" 中的 "123"。
+# 如果搜索成功，search 方法返回一个匹配对象；如果搜索失败，返回 None。
+# 你可以使用匹配对象的方法来获取匹配的结果，例如 group() 方法用于获取匹配的字符串。
+
+import re
+str1 = 'Python is a great language.'
+str2 = 'I like Python.'
+result1 = re.search(r'Python', str1, re.I)
+print(result1)
+print(result1.group())
+result2 = re.search(r'python', str1, re.I)
+print(result2)
+print(result2.group())
+result3 = re.search(r'python', str2, re.I)
+print(result3)
+print(result3.group())
