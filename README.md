@@ -12,7 +12,7 @@
 
 ### Chapter 6 字符串和正则表达式
 
-### Chapter 7 文件和异常处理
+### Chapter 7 文件
 
 #### 只是一个学习Python的笔记
 
