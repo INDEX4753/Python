@@ -20,3 +20,4 @@ print(f"路径分离示例: {os.path.split('/usr/local/bin/python3')}")
 ## 路径连接：将目录和文件名合并为完整路径
 print(f"路径连接示例: {os.path.join('/usr/local/bin', 'python3')}")
 ## 输出路径连接示例
+
